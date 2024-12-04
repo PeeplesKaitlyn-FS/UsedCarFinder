@@ -1,11 +1,32 @@
-html {
-  background: gray;
-  color: white;
-}
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   background-image: url('../images/car-finder-bg.jpg');
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  width: 100vw;
+  color: white;
+}
+
+header {
+  bottom: 20px;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+#car-finder-form {
+  align-items: center;
+}
+
+label, select {
+  margin: 10px 0;
+  text-align: center;
+}
+
+#year, #make, #model {
+  width: 50px;
 }
