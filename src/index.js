@@ -55,6 +55,8 @@ import('./car-dataset.json')
       carData.cars[car.year][car.Manufacturer][car.model] = car;
     });
 
+    console.log(carData);
+
     // Populate the year select element with options
     yearSelect.innerHTML = carData.years.map(year => `<option value="${year}">${year}</option>`).join('');
 
@@ -74,6 +76,12 @@ import('./car-dataset.json')
         makeSelect.innerHTML = '';
         makeSelect.disabled = true;
       }
+
+      // Reset the make and model selects when the year changes
+      makeSelect.value = '';
+      modelSelect.value = '';
+      modelSelect.innerHTML = '';
+      modelSelect.disabled = true;
     }
 
     function handleMakeChange() {
@@ -87,6 +95,9 @@ import('./car-dataset.json')
         modelSelect.innerHTML = '';
         modelSelect.disabled = true;
       }
+
+      // Reset the model select when the make changes
+      modelSelect.value = '';
     }
 
     function handleFindCar() {
