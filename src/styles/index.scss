@@ -1,32 +1,80 @@
 body {
+  font-family: 'Open Sans', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  //width: 100vw;
+  background-color: #F2F2F2; 
   background-image: url('../images/car-finder-bg.jpg');
   background-size: cover;
   background-position: center;
-  color: white;
 }
 
 header {
-  bottom: 20px;
-}
-
-h1 {
-  margin-bottom: 0;
-}
-
-#car-finder-form {
-  align-items: center;
-}
-
-label, select {
-  margin: 10px 0;
+  margin-bottom: 20px;
   text-align: center;
 }
 
-#year, #make, #model {
-  width: 50px;
+h1 {
+  font-weight: bold;
+  color: #FFFFFF; 
+  margin-bottom: 0;
+}
+
+p {
+  color: #D3D3D3; 
+}
+
+#car-finder-form {
+  //display: flex;
+  //flex-direction: column;
+  align-items: center;
+  background-color: #F2F2F2; 
+  height: 80px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#car-finder-form div {
+  display: inline-block;
+  margin: 10px 20px;
+  text-align: center;
+  padding-right: 40px;
+  border-right: 1px solid #ccc;
+  height: 60px;
+}
+
+#car-finder-form div:last-child {
+  border-right: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #348FBC; 
+  font-weight: bold;
+  font-size: 25px;
+  font: open sans;
+}
+
+select {
+  width: 125px;
+  font-weight: medium;
+  color: #348FBC; 
+}
+
+button[type="submit"] {
+  background-color: #348FBC; 
+  color: #FFFFFF; 
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #2F7BB8; 
 }
