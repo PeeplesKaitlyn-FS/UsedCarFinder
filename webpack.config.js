@@ -41,7 +41,8 @@ module.exports = {
     port: 9000,
     hot: true,
     static: './build',
-    open: true
+    open: true, 
+    hotReload: false
   },
   mode: 'development'
 };
