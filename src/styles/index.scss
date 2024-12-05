@@ -25,6 +25,7 @@ h1 {
 
 p {
   color: #D3D3D3; 
+  font-size: 18px;
 }
 
 #car-finder-form {
@@ -56,7 +57,7 @@ label {
   margin-bottom: 5px;
   color: #348FBC; 
   font-weight: bold;
-  font-size: 25px;
+  font-size: 30px;
   font: open sans;
 }
 
@@ -73,6 +74,7 @@ button[type="submit"] {
   padding: 10px 20px;
   font-weight: bold;
   cursor: pointer;
+  
 }
 
 button[type="submit"]:hover {
