@@ -8,21 +8,28 @@
 <body>
   <header>
     <h1>Car Finder App</h1>
+    <p>Looking for your dream vehicle? Use the form below to find the car of your dreams.</p>
   </header>
   <main>
     <form id="car-finder-form">
-      <label for="year">Year:</label>
-      <select id="year" name="year">
-        <option value="">Select Year</option>
-      </select>
-      <label for="make">Make:</label>
-      <select id="make" name="make" disabled>
-        <option value="">Select Make</option>
-      </select>
-      <label for="model">Model:</label>
-      <select id="model" name="model" disabled>
-        <option value="">Select Model</option>
-      </select>
+      <div>
+        <label for="year">Year</label>
+        <select id="year" name="year">
+          <option value="">Select Year</option>
+        </select>
+      </div>
+      <div>
+        <label for="make">Make</label>
+        <select id="make" name="make" disabled>
+          <option value="">Select Make</option>
+        </select>
+      </div>
+      <div>
+        <label for="model">Model</label>
+        <select id="model" name="model" disabled>
+          <option value="">Select Model</option>
+        </select>
+      </div>
       <button type="submit" id="find-car-btn">Find Car</button>
     </form>
     <div id="car-details"></div>
